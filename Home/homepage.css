@@ -6,6 +6,26 @@ body {
     overflow-x: hidden;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffece3;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #fc7c7c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #fc5f5f;
+}
+
 /*Header*/
 .outer-header {
     margin-bottom: 5px;
@@ -151,7 +171,7 @@ body {
     display: block;
 }
 
-.dropdown-menu { 
+.dropdown-menu {
     margin-top: 10px;
 }
 
@@ -161,92 +181,92 @@ body {
     box-shadow: none;
 }
 
-.social > li { 
-    margin-left : 20px;
+.social>li {
+    margin-left: 20px;
 }
 
 
-footer { 
+footer {
     background-color: rgb(34, 34, 34);
-    margin-top:auto;
+    margin-top: auto;
 }
 
 .footer-container {
     height: 400px;
-    display : flex;
-    color:rgb(231, 230, 230);
+    display: flex;
+    color: rgb(231, 230, 230);
     justify-content: space-around;
     align-items: center;
 }
 
 
-.socialList { 
+.socialList {
     line-height: 2.3rem;
     list-style-type: none;
 }
 
-.socialList > li > a{ 
+.socialList>li>a {
     text-decoration: none;
-    color: rgb(231, 230, 230); 
+    color: rgb(231, 230, 230);
 }
 
-.socialList > li { 
-    margin-left : 20px;
+.socialList>li {
+    margin-left: 20px;
     list-style-type: none;
 }
 
-.map > iframe{
+.map>iframe {
     overflow: hidden;
 }
 
-.location{ 
+.location {
     width: 40%;
 }
 
-#plug-in-map{
+#plug-in-map {
     margin-top: 6px;
 }
 
 .address {
-    text-align:center;
+    text-align: center;
     line-height: 1.25rem;
     margin-top: 5px;
 }
 
-.footer-bottom { 
+.footer-bottom {
     font-size: 14.5px;
     height: 60px;
-    display : flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.copyright { 
-    color :rgb(231, 230, 230);
+.copyright {
+    color: rgb(231, 230, 230);
 }
 
-.map { 
+.map {
     display: flex;
     justify-content: space-evenly;
-    width :100%;
+    width: 100%;
 }
 
 .payments {
     display: flex;
     color: rgb(231, 230, 230);
-    margin-left : -50px;
+    margin-left: -50px;
 }
 
-#payment-icon { 
+#payment-icon {
     display: flex;
     justify-content: center;
-    width : 100%;
+    width: 100%;
 }
 
-#payment-icon > div { 
-    margin-left : 9px;
-    margin-top : 5px;
-    font-size : 20px;
+#payment-icon>div {
+    margin-left: 9px;
+    margin-top: 5px;
+    font-size: 20px;
 }
 
 
@@ -275,34 +295,34 @@ footer {
     max-width: 100%;
 }
 
-.w3-left > h2 { 
+.w3-left>h2 {
     margin-left: 6px;
 }
 
-.w3-right{ 
-    margin-right : 7px;
+.w3-right {
+    margin-right: 7px;
 }
 
 
 /*Most outer container*/
-#w3-container{ 
-    width : 100%;
+#w3-container {
+    width: 100%;
 }
 
 /*Each container of books*/
-#sContainers{ 
-    width : 230px;
-    flex : 1 1 230px;
+#sContainers {
+    width: 230px;
+    flex: 1 1 230px;
 }
 
-#group{
+#group {
     display: flex;
-    flex-flow : row wrap;
-    width : 100%;
+    flex-flow: row wrap;
+    width: 100%;
 }
 
-#s1 { 
-    font-weight : 700;
+#s1 {
+    font-weight: 700;
 }
 
 
@@ -352,8 +372,8 @@ footer {
         margin-top: 26px;
     }
 
-    footer{ 
-        margin-top : 50px;
+    footer {
+        margin-top: 50px;
     }
 
 
@@ -398,7 +418,7 @@ footer {
         width: 125px !important;
     }
 
-    .nav-btn{
+    .nav-btn {
         margin-top: -9px !important;
         margin-right: -6px;
     }
@@ -455,102 +475,105 @@ footer {
 
 
     /*Another view of footer for mobile and tablet*/
-    footer { 
-        height :800px;
-        display :flex;
+    footer {
+        height: 800px;
+        display: flex;
         flex-flow: row wrap;
         align-items: center;
         margin-top: 20px;
     }
 
-    .footer-container{ 
-        height : 600px;
-        display : flex;
-        flex-flow: row wrap;
-    }
-    .footer-bottom {
-        height : 200px;
-        width :100%;
+    .footer-container {
+        height: 600px;
         display: flex;
         flex-flow: row wrap;
     }
 
-    .socialMedia{ 
+    .footer-bottom {
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .socialMedia {
         margin-top: 30px;
     }
 
-    .socialList > ul > li{ 
+    .socialList>ul>li {
         display: flex;
         width: 100%;
-        flex:  0 0 200px;
+        flex: 0 0 200px;
     }
 
-    .location{ 
-        display:flex;
+    .location {
+        display: flex;
         flex-flow: column nowrap;
         width: 100%;
-        margin : 0 20px 0 20px;
+        margin: 0 20px 0 20px;
     }
 
-    .location .map,.address {
+    .location .map,
+    .address {
         width: 100%;
     }
 
-    .payments { 
-        display:flex;
+    .payments {
+        display: flex;
         flex-flow: row wrap;
         justify-content: center;
     }
 
-    #payment-icon { 
+    #payment-icon {
         width: 100%;
     }
 
-    #payment-icon:last-child{ 
-        margin-right : -40px;
+    #payment-icon:last-child {
+        margin-right: -40px;
     }
 
-    .payments > p { 
+    .payments>p {
         margin-bottom: -5px;
-        margin-right : -32px;
-        width : 100%;
-        display : flex;
-        justify-content: center;
-    }
-
-    .copyright { 
-        order : 4;
-        width : 100%;
+        margin-right: -32px;
+        width: 100%;
         display: flex;
         justify-content: center;
-        margin-bottom : -30px;
+    }
+
+    .copyright {
+        order: 4;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: -30px;
         margin-top: -30px;
     }
 
-    .socialMedia { 
-        width : 100%;
-        margin-left : 0px;
+    .socialMedia {
+        width: 100%;
+        margin-left: 0px;
     }
 
-    .socialMedia > ul > li{
+    .socialMedia>ul>li {
         text-align: center;
-        
+
     }
-    .socialList { 
+
+    .socialList {
         line-height: 2.3rem;
         text-align: center;
     }
-    
-    .socialList > li > a{ 
+
+    .socialList>li>a {
         text-decoration: none;
-        color: rgb(231, 230, 230); 
-    }
-    
-    .socialList > li { 
-        margin-left : -20px;
+        color: rgb(231, 230, 230);
     }
 
-    #location-title{ 
+    .socialList>li {
+        margin-left: -20px;
+    }
+
+    #location-title {
         text-align: center;
     }
 
@@ -558,10 +581,11 @@ footer {
 
 /*Quite small mobile*/
 @media (max-height: 851px) {
-    .adjustment { 
-        margin-left : -30px;
+    .adjustment {
+        margin-left: -30px;
     }
+
     .adjustment2 {
-        margin-left : -16px;
+        margin-left: -16px;
     }
 }
