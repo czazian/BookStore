@@ -21,30 +21,6 @@
     <link href="homepage.css" rel="stylesheet">
     <title>Pro-Book | Your Preferable Choice</title>
     <link rel="icon" type="image/x-icon" href="/image/title-logo.jpg">
-    <style>
-        .w3-quarter {
-            width: 20%;
-        }
-
-        .subTitlePadding {
-            padding-bottom: 8px;
-        }
-
-        .w3-right {
-            padding-top: 14px;
-        }
-
-        .displayborder {
-            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
-        }
-
-        .poster {
-            padding-top: 10px;
-            width: 180px;
-            height: 280px;
-            max-width: 100%;
-        }
-    </style>
 </head>
 
 <body>
@@ -190,7 +166,7 @@
                                     <ul>
                                         <p style="font-size:18px; color:gray">Follow Us</p>
                                     </ul>
-                                    <ul class="social" style="font-size:18px; margin-left : 12px;">
+                                    <ul class="social" style="font-size:18px; list-style-type: none;">
                                         <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>
                                                 Facebook</a></li>
                                         <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>
@@ -361,6 +337,17 @@
 
 
 
+
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
     <!--BOOKS (YIYANG)-->
     <!-- !PAGE CONTENT! -->
     <div class="w3-main w3-content" style="max-width:1200px;margin-top:20px">
@@ -370,60 +357,70 @@
                 <h2>New Arrivals</h2>
             </div>
             <div class="w3-right">
-                <p><button class="w3-block w3-green w3-button w3-round">View more <i>&rArr;</i></button></p>
+                <p><button class="w3-hover-red w3-block w3-deep-orange w3-button w3-round">View more <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></p>
             </div>
             <!-- First Photo Grid-->
-            <div class="w3-row-padding w3-center">
-                <div class="w3-quarter displayborder">
+            <div id="group" class="w3-row-padding w3-center">
+                <div id="sContainers" class="w3-quarter displayborder">
                     <img src="/image/book1.jpg" class="poster">
-                    <h4><strong>Suzume</strong></h4>
-                    <p>Makoto Shinkai</p>
+                    <h4 class="s1">Suzume</h4>
+                    <p class="s2">Makoto Shinkai</p>
                     <p><b>RM 20.00</b></p>
-                    <p><button class="w3-button w3-block w3-red w3-round"
+                    <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
                             onclick="document.getElementById('download').style.display='block'">Add to cart <i
                                 class="fa fa-shopping-cart"></i></button></p>
                 </div>
-                <div class="w3-quarter displayborder">
+                <div id="sContainers" class="w3-quarter displayborder">
                     <img src="/image/book2.jpg" class="poster">
-                    <h4><strong>Capturing Hope</strong></h4>
-                    <p>Tun Dr Mahathir Mohamad</p>
+                    <h4 class="s1">Capturing Hope</h4>
+                    <p class="s2">Tun Dr Mahathir Mohamad</p>
                     <p><b>RM 100.00</b></p>
-                    <p><button class="w3-button w3-block w3-red w3-round"
+                    <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
                             onclick="document.getElementById('download').style.display='block'">Add to cart <i
                                 class="fa fa-shopping-cart"></i></button></p>
                 </div>
-                <div class="w3-quarter displayborder">
+                <div id="sContainers" class="w3-quarter displayborder">
                     <img src="/image/book3.jpg" class="poster">
-                    <h4><strong>The Silent Patient</strong></h4>
-                    <p>Orion</p>
+                    <h4  class="s1">The Silent Patient</h4>
+                    <p class="s2">Orion</p>
                     <p><b>RM 49.90</b></p>
-                    <p><button class="w3-button w3-block w3-red w3-round"
+                    <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
                             onclick="document.getElementById('download').style.display='block'">Add to cart <i
                                 class="fa fa-shopping-cart"></i></button></p>
                 </div>
-                <div class="w3-quarter displayborder">
+                <div id="sContainers" class="w3-quarter displayborder">
                     <img src="/image/book4.jpg" class="poster">
-                    <h4><strong>Harry Potter</strong></h4>
-                    <p>J. K. Rowling</p>
+                    <h4  class="s1">Harry Potter</h4>
+                    <p class="s2">J. K. Rowling</p>
                     <p><b>RM 47.50</b></p>
-                    <p><button class="w3-button w3-block w3-red w3-round"
+                    <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
                             onclick="document.getElementById('download').style.display='block'">Add to cart <i
                                 class="fa fa-shopping-cart"></i></button></p>
                 </div>
-                <div class="w3-quarter displayborder">
+                <div id="sContainers" class="w3-quarter displayborder">
                     <img src="/image/book5.jpg" class="poster">
-                    <h4><strong>Chainsaw Man</strong></h4>
-                    <p>Tatsuki Fujimoto</p>
+                    <h4  class="s1">Chainsaw Man</h4>
+                    <p class="s2">Tatsuki Fujimoto</p>
                     <p><b>RM 49.90</b></p>
-                    <p><button class="w3-button w3-block w3-red w3-round"
+                    <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
                             onclick="document.getElementById('download').style.display='block'">Add to cart <i
                                 class="fa fa-shopping-cart"></i></button></p>
                 </div>
             </div>
         </div>
 
+
+
+
+
+
+
+
+
+
+
         <!-- Banner 1 -->
-        <div class="w3-padding-16 w3-center"><img src="/image/banner1.jpg" style="width:100%"></div>
+        <div class="w3-padding-16 w3-margin-left w3-margin-right w3-center"><img src="/image/banner1.jpg" style="width:100%"></div>
 
         <!-- Best Fiction Books Content -->
         <div class="w3-padding-16">
@@ -431,58 +428,68 @@
                 <h2>Best Fiction Books</h2>
             </div>
             <div class="w3-right">
-                <p><button class="w3-block w3-green w3-button w3-round">View more <i>&rArr;</i></button></p>
+                <p><button class="w3-hover-red w3-block w3-deep-orange w3-button w3-round">View more <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></p>
             </div>
             <div class="w3-padding-16"><!-- Second Photo Grid-->
-                <div class="w3-row-padding w3-padding-16 w3-center">
-                    <div class="w3-quarter displayborder">
+                <div id="group" class="w3-row-padding w3-padding-16 w3-center">
+                    <div id="sContainers" class="w3-quarter displayborder">
                         <img src="/image/book6.jpg" class="poster">
-                        <h4><strong>The Maze Runner</strong></h4>
-                        <p>James Dashner</p>
+                        <h4  class="s1">The Maze Runner</h4>
+                        <p class="s2">James Dashner</p>
                         <p><b>RM 27.00</b></p>
-                        <p><button class="w3-button w3-block w3-red w3-round"
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
                                 onclick="document.getElementById('download').style.display='block'">Add to cart <i
                                     class="fa fa-shopping-cart"></i></button></p>
                     </div>
-                    <div class="w3-quarter displayborder">
+                    <div id="sContainers" class="w3-quarter displayborder">
                         <img src="/image/book7.jpg" class="poster">
-                        <h4><strong>Attack on Titan</strong></h4>
-                        <p>Hajime Isayama</p>
+                        <h4 class="s1">Attack on Titan</h4>
+                        <p class="s2">Hajime Isayama</p>
                         <p><b>RM 45.00</b></p>
-                        <p><button class="w3-button w3-block w3-red w3-round"
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
                                 onclick="document.getElementById('download').style.display='block'">Add to cart <i
                                     class="fa fa-shopping-cart"></i></button></p>
                     </div>
-                    <div class="w3-quarter displayborder">
+                    <div id="sContainers" class="w3-quarter displayborder">
                         <img src="/image/book8.jpg" class="poster">
-                        <h4><strong>It</strong></h4>
-                        <p>Stephen King</p>
+                        <h4 class="s1">It</h4>
+                        <p class="s2">Stephen King</p>
                         <p><b>RM 19.90</b></p>
-                        <p><button class="w3-button w3-block w3-red w3-round"
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
                                 onclick="document.getElementById('download').style.display='block'">Add to cart <i
                                     class="fa fa-shopping-cart"></i></button></p>
                     </div>
-                    <div class="w3-quarter displayborder">
+                    <div id="sContainers" class="w3-quarter displayborder">
                         <img src="/image/book9.jpg" class="poster">
-                        <h4><strong>The Shining</strong></h4>
-                        <p>Stephen King</p>
+                        <h4 class="s1">The Shining</h4>
+                        <p class="s2">Stephen King</p>
                         <p><b>RM 56.50</b></p>
-                        <p><button class="w3-button w3-block w3-red w3-round"
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
                                 onclick="document.getElementById('download').style.display='block'">Add to cart <i
                                     class="fa fa-shopping-cart"></i></button></p>
                     </div>
-                    <div class="w3-quarter displayborder">
+                    <div id="sContainers" class="w3-quarter displayborder">
                         <img src="/image/book10.jpg" class="poster">
-                        <h4><strong>The Hating Game</strong></h4>
-                        <p>Thorne, Sally</p>
+                        <h4  class="s1">The Hating Game</h4>
+                        <p class="s2">Thorne, Sally</p>
                         <p><b>RM 52.90</b></p>
-                        <p><button class="w3-button w3-block w3-red w3-round"
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
                                 onclick="document.getElementById('download').style.display='block'">Add to cart <i
                                     class="fa fa-shopping-cart"></i></button></p>
                     </div>
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
 
         <!-- Best Non-Fiction Books Content -->
         <div class="w3-padding-16">
@@ -490,52 +497,52 @@
                 <h2>Best Non-Fiction Books</h2>
             </div>
             <div class="w3-right">
-                <p><button class="w3-block w3-green w3-button w3-round">View more <i>&rArr;</i></button></p>
+                <p><button class="w3-hover-red w3-block w3-deep-orange w3-button w3-round">View more <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></p>
             </div>
             <div class="w3-padding-16"><!-- Second Photo Grid-->
-                <div class="w3-row-padding w3-padding-16 w3-center">
-                    <div class="w3-quarter displayborder">
+                <div id="group" class="w3-row-padding w3-padding-16 w3-center">
+                    <div id="sContainers" class="w3-quarter displayborder">
                         <img src="/image/book11.jpg" class="poster">
-                        <h4><strong>Indelible City</strong></h4>
-                        <p>Louisa Lim</p>
+                        <h4 class="s1">Indelible City</h4>
+                        <p class="s2">Louisa Lim</p>
                         <p><b>RM 33.00</b></p>
-                        <p><button class="w3-button w3-block w3-red w3-round"
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
                                 onclick="document.getElementById('download').style.display='block'">Add to cart <i
                                     class="fa fa-shopping-cart"></i></button></p>
                     </div>
-                    <div class="w3-quarter displayborder">
+                    <div id="sContainers" class="w3-quarter displayborder">
                         <img src="/image/book12.jpg" class="poster">
-                        <h4><strong>An Immense World</strong></h4>
-                        <p>Ed Yong</p>
+                        <h4 class="s1">An Immense World</h4>
+                        <p class="s2">Ed Yong</p>
                         <p><b>RM 20.50</b></p>
-                        <p><button class="w3-button w3-block w3-red w3-round"
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
                                 onclick="document.getElementById('download').style.display='block'">Add to cart <i
                                     class="fa fa-shopping-cart"></i></button></p>
                     </div>
-                    <div class="w3-quarter displayborder">
+                    <div id="sContainers" class="w3-quarter displayborder">
                         <img src="/image/book13.jpg" class="poster">
-                        <h4><strong>Life Force (US)</strong></h4>
-                        <p>Simon & Schuster US</p>
+                        <h4 class="s1">Life Force (US)</h4>
+                        <p class="s2">Simon & Schuster US</p>
                         <p><b>RM 99.90</b></p>
-                        <p><button class="w3-button w3-block w3-red w3-round"
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
                                 onclick="document.getElementById('download').style.display='block'">Add to cart <i
                                     class="fa fa-shopping-cart"></i></button></p>
                     </div>
-                    <div class="w3-quarter displayborder">
+                    <div id="sContainers" class="w3-quarter displayborder">
                         <img src="/image/book14.jpg" class="poster">
-                        <h4><strong>When I Was a Kid</strong></h4>
-                        <p>Grey Pigeon</p>
+                        <h4 class="s1">When I Was a Kid</h4>
+                        <p class="s2">Grey Pigeon</p>
                         <p><b>RM 39.90</b></p>
-                        <p><button class="w3-button w3-block w3-red w3-round"
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
                                 onclick="document.getElementById('download').style.display='block'">Add to cart <i
                                     class="fa fa-shopping-cart"></i></button></p>
                     </div>
-                    <div class="w3-quarter displayborder">
+                    <div id="sContainers" class="w3-quarter displayborder">
                         <img src="/image/book15.jpg" class="poster">
-                        <h4><strong>Autumn Baking</strong></h4>
-                        <p>Chuah Chiew See</p>
+                        <h4 class="s1">Autumn Baking</h4>
+                        <p class="s2">Chuah Chiew See</p>
                         <p><b>RM 41.00</b></p>
-                        <p><button class="w3-button w3-block w3-red w3-round"
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
                                 onclick="document.getElementById('download').style.display='block'">Add to cart <i
                                     class="fa fa-shopping-cart"></i></button></p>
                     </div>
@@ -543,61 +550,72 @@
             </div>
         </div>
 
+
+
+
+
+
+
+
+
+
+
+
         <!-- Banner 2 -->
-        <div class="w3-padding-16 w3-center"><img src="/image/banner2.jpg" style="width:100%; height:200px;"></div>
+        <div class="w3-padding-16 w3-margin-left w3-margin-right w3-center"><img src="/image/banner2.jpg" style="width:100%; height:auto;"></div>
 
         <!-- Best Manga & Light Novel Content -->
         <div class="w3-padding-16">
             <div class="w3-left subTitlePadding">
-                <h2>Best Manga & Light Novel</h2>
+                <h2>Best Manga & Light Novels</h2>
             </div>
             <div class="w3-right">
-                <p><button class="w3-block w3-green w3-button w3-round">View more <i>&rArr;</i></button></p>
+                <p><button class="w3-block w3-deep-orange w3-button w3-round w3-hover-red">View more <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></p>
             </div>
-            <div class="w3-padding-16"><!-- Second Photo Grid-->
-                <div class="w3-row-padding w3-padding-16 w3-center">
-                    <div class="w3-quarter displayborder">
+            <div id="w3-container" class="w3-padding-16"><!-- Second Photo Grid-->
+                <div id="group" class="w3-row-padding w3-padding-16 w3-center">
+                    <div id="sContainers" class="w3-quarter displayborder">
                         <img src="/image/book16.jpg" class="poster">
-                        <h4><strong>Spy Classroom</strong></h4>
-                        <p>Takemachi, Tomari</p>
+                        <h4 class="s1">Spy Classroom</h4>
+                        <p class="s2">Takemachi, Tomari</p>
                         <p><b>RM 66.00</b></p>
-                        <p><button class="w3-button w3-block w3-red w3-round"
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
                                 onclick="document.getElementById('download').style.display='block'">Add to cart <i
                                     class="fa fa-shopping-cart"></i></button></p>
                     </div>
-                    <div class="w3-quarter displayborder">
+                    <div id="sContainers" class="w3-quarter displayborder">
                         <img src="/image/book7.jpg" class="poster">
-                        <h4><strong>Attack on Titan</strong></h4>
-                        <p>Hajime Isayama</p>
+                        <h4 class="s1">Attack on Titan</h4>
+                        <p class="s2">Hajime Isayama</p>
                         <p><b>RM 45.00</b></p>
-                        <p><button class="w3-button w3-block w3-red w3-round"
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
                                 onclick="document.getElementById('download').style.display='block'">Add to cart <i
                                     class="fa fa-shopping-cart"></i></button></p>
                     </div>
-                    <div class="w3-quarter displayborder">
+                    <div id="sContainers" class="w3-quarter displayborder">
                         <img src="/image/book18.jpg" class="poster">
-                        <h4><strong>Classroom of the Elite</strong></h4>
-                        <p>Syougo Kinugasa</p>
+                        <h4 class="s1">Classroom of the Elite</h4>
+                        <p class="s2">Syougo Kinugasa</p>
                         <p><b>RM 49.90</b></p>
-                        <p><button class="w3-button w3-block w3-red w3-round"
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
                                 onclick="document.getElementById('download').style.display='block'">Add to cart <i
                                     class="fa fa-shopping-cart"></i></button></p>
                     </div>
-                    <div class="w3-quarter displayborder">
+                    <div id="sContainers" class="w3-quarter displayborder">
                         <img src="/image/book19.jpg" class="poster">
-                        <h4><strong>Overlord</strong></h4>
-                        <p>Kugane Maruyama</p>
+                        <h4 class="s1">Overlord</h4>
+                        <p class="s2">Kugane Maruyama</p>
                         <p><b>RM 77.70</b></p>
-                        <p><button class="w3-button w3-block w3-red w3-round"
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
                                 onclick="document.getElementById('download').style.display='block'">Add to cart <i
                                     class="fa fa-shopping-cart"></i></button></p>
                     </div>
-                    <div class="w3-quarter displayborder">
+                    <div id="sContainers" class="w3-quarter displayborder">
                         <img src="/image/book20.jpg" class="poster">
-                        <h4><strong>No Game No Life</strong></h4>
-                        <p>Yuu Kamiya</p>
+                        <h4 class="s1">No Game No Life</h4>
+                        <p class="s2">Yuu Kamiya</p>
                         <p><b>RM 45.90</b></p>
-                        <p><button class="w3-button w3-block w3-red w3-round"
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
                                 onclick="document.getElementById('download').style.display='block'">Add to cart <i
                                     class="fa fa-shopping-cart"></i></button></p>
                     </div>
@@ -610,15 +628,34 @@
 
 
 
+
+
+
+
+
+
+   <!------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 
 <footer>
     <div class="footer-container" class="container-fluid">
         <div class="socialMedia">
-            <ul style="list-style-type: none;">
-                <li style="font-size: 22px; margin-bottom : 5px;">Follow Us</li>
-                <ul class="socialList">
+            <ul class="adjustment" style="list-style-type: none;">
+                <li class="adjustment2" style="font-size: 22px; margin-bottom : 5px;">Follow Us</li>
+                <ul class="socialList adjustment">
                     <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>
                             Facebook</a></li>
                     <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>
@@ -632,7 +669,7 @@
         </div>
         <div class="location">
             <div class="map">
-                <ul>
+                <ul class="adjustment">
                     <li id="location-title" style="font-size: 22px; list-style-type: none;">Location</li>
                     <li id="plug-in-map" style="list-style-type: none;"><iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.5366112914785!2d101.72591861422123!3d3.2155626536388193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20of%20Management%20and%20Technology%20(TAR%20UMT)!5e0!3m2!1sen!2smy!4v1678112699587!5m2!1sen!2smy"

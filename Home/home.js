@@ -1,11 +1,11 @@
-
-
 //Text Slider
 var slideNumber = 1;
 var duration = 4000;
 slide(slideNumber);
 
+//Onload function only one
 window.onload = function () {
+  //For autoplay promoter
   setInterval(function () {
     plusSlides(1);
   }, duration);
@@ -31,11 +31,29 @@ function slide(number) {
 }
 
 
-//Scroll detection
-/* userHasScrolled = false;
-window.onscroll = function (e)
-{
-    userHasScrolled = true;
-} */
+//Check the lenght of book name and author name, if > 17, take only 20 chars + ...
+//For book title
+$(".s1").each(function () {
+  var string = $(this).text();
+  var limit = 17;
+  var length = string.length;
+  if (length > limit) {
+    var result = string.substr(0, limit);
+    $(this).text(result + "...");
+  }
+});
+
+
+//For author name
+$(".s2").each(function () {
+  var string = $(this).text();
+  var limit = 17;
+  var length = string.length;
+  if (length> limit) {
+    var result = string.substr(0, limit);
+    $(this).text(result + "...");
+  }
+});
+
 
 
