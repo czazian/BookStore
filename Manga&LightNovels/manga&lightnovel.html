@@ -18,9 +18,32 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <link href="reset.css" rel="stylesheet">
-    <link href="homepage.css" rel="stylesheet">
+    <link href="/Home/homepage.css" rel="stylesheet">
     <title>Pro-Book | Manga & Light Novels</title>
     <link rel="icon" type="image/x-icon" href="/image/title-logo.jpg">
+
+    <style>
+        .setsubtitlepadding {
+            padding-left: 15px;
+            padding-top: 10px;
+        }
+
+        .col-2 {
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        .list-group {
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .list-group>a:hover {
+            color: white;
+            background-color: #fa4d4d;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -99,10 +122,9 @@
                                         FICTION
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Fantasy</a></li>
-                                        <li><a class="dropdown-item" href="#">Horror</a></li>
-                                        <li><a class="dropdown-item" href="#">Romance</a></li>
-                                        <li><a class="dropdown-item" href="#">General Fictions</a></li>
+                                        <li><a class="dropdown-item" href="/Fiction/fiction.html#list-item-1">Fantasy</a></li>
+                                        <li><a class="dropdown-item" href="/Fiction/fiction.html#list-item-2">Horror</a></li>
+                                        <li><a class="dropdown-item" href="/Fiction/fiction.html#list-item-3">General Fictions</a></li>
                                     </ul>
                                 </ul>
 
@@ -116,7 +138,6 @@
                                         <li><a class="dropdown-item" href="#">Family & Relationship</a></li>
                                         <li><a class="dropdown-item" href="#">Health Lifestyle</a></li>
                                         <li><a class="dropdown-item" href="#">Marketing & Sales</a></li>
-                                        <li><a class="dropdown-item" href="#">Computing & Information Technology</a>
                                         </li>
                                         <li><a class="dropdown-item" href="#">Food & Drinks</a></li>
                                     </ul>
@@ -143,10 +164,10 @@
                                         MANGA & LIGHT NOVELS
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Reincarnation</a></li>
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Romance</a></li>
-                                        <li><a class="dropdown-item" href="#">Slice-of-Life</a></li>
+                                        <li><a class="dropdown-item" href="#list-item-1">Reincarnation</a></li>
+                                        <li><a class="dropdown-item" href="#list-item-2">Action</a></li>
+                                        <li><a class="dropdown-item" href="#list-item-3">Romance</a></li>
+                                        <li><a class="dropdown-item" href="#list-item-4">Slice-of-Life</a></li>
                                     </ul>
                                 </ul>
 
@@ -220,27 +241,20 @@
             <div class="login">
                 <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown"
                     aria-expanded="false" style="background-color: rgb(215, 7, 7);">
-                    <img src="/image/administrator-icon.png" alt="" style="width: 40%; border-radius: 50%;">
-                    <i>Tan</i>
+                    <img src="/image/administrator-icon.png" alt="" style="width: 30%; border-radius: 50%;"> Login
                 </button>
                 <!--Insert login link for staff and customer-->
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+                    <li><a class="dropdown-item" href="#">Customer</a></li>
+                    <li><a class="dropdown-item" href="#">Staff</a></li>
                 </ul>
-            </div>
-
-            <div class="wishlist-container">
-                <i data-bs-toggle="tooltip" data-bs-title="Wishlist" class="fa fa-heart" aria-hidden="true"
-                    style="cursor: pointer; font-size:20px; color:white; margin-left :8px; background-color:rgb(215, 7, 7); border-radius: 5.5px; padding: 10px;"></i>
             </div>
             <div class="cart-container">
                 <i data-bs-toggle="tooltip" data-bs-title="Cart" class="fa fa-shopping-cart" aria-hidden="true"
-                    style="cursor: pointer; margin-left: 8px; background-color: rgb(215, 7, 7); color:white; padding: 10px; padding-right: 9px; border-radius: 5.5px; font-size: 20px"></i>
+                    style="cursor: pointer; margin-left: 8px; background-color: rgb(215, 7, 7); color:white; padding: 10px; padding-right: 10px; border-radius: 5.5px; font-size: 20px"></i>
             </div>
         </div>
     </div>
-
 
     <!--Category for PC-->
     <div class="dropdowns" style="padding-bottom: 40px;">
@@ -260,10 +274,9 @@
                 FICTION
             </button>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Fantasy</a></li>
-                <li><a class="dropdown-item" href="#">Horror</a></li>
-                <li><a class="dropdown-item" href="#">Romance</a></li>
-                <li><a class="dropdown-item" href="#">General Fictions</a></li>
+                <li><a class="dropdown-item" href="/Fiction/fiction.html#list-item-1">Fantasy</a></li>
+                <li><a class="dropdown-item" href="/Fiction/fiction.html#list-item-2">Horror</a></li>
+                <li><a class="dropdown-item" href="/Fiction/fiction.html#list-item-3">General Fictions</a></li>
             </ul>
         </div>
         <div class="drop">
@@ -271,7 +284,6 @@
                 NON-FICTION
             </button>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Family & Relationship</a></li>
                 <li><a class="dropdown-item" href="#">Health Lifestyle</a></li>
                 <li><a class="dropdown-item" href="#">Marketing & Sales</a></li>
                 <li><a class="dropdown-item" href="#">Computing & Information Technology</a></li>
@@ -284,8 +296,6 @@
             </button>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Rivision Reference Books</a></li>
-                <li><a class="dropdown-item" href="#">Hobbies & Leisures</a></li>
-                <li><a class="dropdown-item" href="#">Character Stories</a></li>
                 <li><a class="dropdown-item" href="#">Picture Books</a></li>
             </ul>
         </div>
@@ -294,10 +304,10 @@
                 MANGA & LIGHT NOVELS
             </button>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Reincarnation</a></li>
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Romance</a></li>
-                <li><a class="dropdown-item" href="#">Slice-of-Life</a></li>
+                <li><a class="dropdown-item" href="#list-item-1">Reincarnation</a></li>
+                <li><a class="dropdown-item" href="#list-item-2">Action</a></li>
+                <li><a class="dropdown-item" href="#list-item-3">Romance</a></li>
+                <li><a class="dropdown-item" href="#list-item-4">Slice-of-Life</a></li>
             </ul>
         </div>
         <div class="drop">
@@ -309,183 +319,197 @@
     </div>
     <!--END OF BOOKS-->
 
-
-
+    <!-- !PAGE CONTENT! -->
     <!------------------------------------------------------------------------------------------------------------------------------------------->
 
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main w3-content" style="max-width:1400px;margin-top:20px;">
-        <!-- New Arrivals Content -->
-        <div class="w3-padding-16">
-            <div class="w3-left subTitlePadding" style="padding-left: 25px;">
-                <h2>Manga & Light Novels</h2>
-                <p style="padding-left: 20px">Showing 1 - 15 books</p>
+
+    <!-- left handside panel -->
+
+    <div class="row">
+        <div class="col-2" style="min-width: fit-content;">
+            <h2 style="padding-left: 25px; padding-top: 20px;">Filters</h2>
+            <div id="list-example" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#list-item-1">Reincarnation</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">Action</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">Romance</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">Slice-of-Life</a>
             </div>
-            <!-- First Photo Grid-->
-            <div id="group" class="w3-row-padding w3-center">
-                <div id="sContainers" class="w3-quarter displayborder">
-                    <img src="/image/book1.jpg" class="poster">
-                    <h4 class="s1">Suzume</h4>
-                    <p class="s2">Makoto Shinkai</p>
-                    <p><b>RM 20.00</b></p>
-                    <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
-                            onclick="document.getElementById('download').style.display='block'">Add to cart <i
-                                class="fa fa-shopping-cart"></i></button></p>
+        </div>
+        <div class="col-10">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                class="scrollspy-example" tabindex="0" style="height:500px">
+                <h2 style="padding-left: 15px;"><strong>Manga & Light Novels</strong></h2>
+                <p style="padding-left: 15px; padding-top: 5px;">Showing 1 - 16 books</p>
+                <h4 id="list-item-1" class="setsubtitlepadding">Reincarnation</h4>
+                <!-- First Photo Grid-->
+                <div id="group" class="w3-row-padding w3-center">
+                    <div id="sContainers" class="w3-quarter displayborder">
+                        <img src="/image/book1.jpg" class="poster">
+                        <h4 class="s1">No Game No Life, Vol. 1</h4>
+                        <p class="s2">Yuu Kamiya</p>
+                        <p><b>RM 45.90</b></p>
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
+                                onclick="document.getElementById('download').style.display='block'">Add to cart <i
+                                    class="fa fa-shopping-cart"></i></button></p>
+                    </div>
+                    <div id="sContainers" class="w3-quarter displayborder">
+                        <img src="/image/book2.jpg" class="poster">
+                        <h4 class="s1">Mushoku Tensei: Jobless Reincarnation, Vol. 1</h4>
+                        <p class="s2">Rifujin na Magonote</p>
+                        <p><b>RM 55.00</b></p>
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
+                                onclick="document.getElementById('download').style.display='block'">Add to cart <i
+                                    class="fa fa-shopping-cart"></i></button></p>
+                    </div>
+                    <div id="sContainers" class="w3-quarter displayborder">
+                        <img src="/image/book3.jpg" class="poster">
+                        <h4 class="s1">That Time I Got Reincarnated as a Slime, Vol. 5</h4>
+                        <p class="s2">Fuse</p>
+                        <p><b>RM 49.90</b></p>
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
+                                onclick="document.getElementById('download').style.display='block'">Add to cart <i
+                                    class="fa fa-shopping-cart"></i></button></p>
+                    </div>
+                    <div id="sContainers" class="w3-quarter displayborder">
+                        <img src="/image/book4.jpg" class="poster">
+                        <h4 class="s1">So I'm a Spider, So What?, Vol. 6</h4>
+                        <p class="s2">Okina Baba</p>
+                        <p><b>RM 47.60</b></p>
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
+                                onclick="document.getElementById('download').style.display='block'">Add to cart <i
+                                    class="fa fa-shopping-cart"></i></button></p>
+                    </div>
                 </div>
-                <div id="sContainers" class="w3-quarter displayborder">
-                    <img src="/image/book21.jpg" class="poster">
-                    <h4 class="s1">Assassination Classroom</h4>
-                    <p class="s2">Yusei Matsui</p>
-                    <p><b>RM 55.00</b></p>
-                    <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
-                            onclick="document.getElementById('download').style.display='block'">Add to cart <i
-                                class="fa fa-shopping-cart"></i></button></p>
+                <h4 id="list-item-2" class="setsubtitlepadding">Action</h4>
+                <!-- Second Photo Grid-->
+                <div id="group" class="w3-row-padding w3-center">
+                    <div id="sContainers" class="w3-quarter displayborder">
+                        <img src="/image/book5.jpg" class="poster">
+                        <h4 class="s1">Attack on Titan, Vol. 1</h4>
+                        <p class="s2">Hajime Isayama</p>
+                        <p><b>RM 45.00</b></p>
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
+                                onclick="document.getElementById('download').style.display='block'">Add to cart <i
+                                    class="fa fa-shopping-cart"></i></button></p>
+                    </div>
+                    <div id="sContainers" class="w3-quarter displayborder">
+                        <img src="/image/book6.jpg" class="poster">
+                        <h4 class="s1">Chainsaw Man, Vol. 10</h4>
+                        <p class="s2">Tatsuki Fujimoto</p>
+                        <p><b>RM 49.90</b></p>
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
+                                onclick="document.getElementById('download').style.display='block'">Add to cart <i
+                                    class="fa fa-shopping-cart"></i></button></p>
+                    </div>
+                    <div id="sContainers" class="w3-quarter displayborder">
+                        <img src="/image/book7.jpg" class="poster">
+                        <h4 class="s1">Demon Slayer: Kimetsu no Yaiba, Vol. 8</h4>
+                        <p class="s2">Koyoharu Gotouge</p>
+                        <p><b>RM 42.50</b></p>
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
+                                onclick="document.getElementById('download').style.display='block'">Add to cart <i
+                                    class="fa fa-shopping-cart"></i></button></p>
+                    </div>
+                    <div id="sContainers" class="w3-quarter displayborder">
+                        <img src="/image/book8.jpg" class="poster">
+                        <h4 class="s1">Jujutsu Kaisen, Vol. 1</h4>
+                        <p class="s2">Akutami, Gege</p>
+                        <p><b>RM 47.60</b></p>
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
+                                onclick="document.getElementById('download').style.display='block'">Add to cart <i
+                                    class="fa fa-shopping-cart"></i></button></p>
+                    </div>
                 </div>
-                <div id="sContainers" class="w3-quarter displayborder">
-                    <img src="/image/book22.jpg" class="poster">
-                    <h4 class="s1">Spy X Family, Vol. 1</h4>
-                    <p class="s2">Tatsuya Endo</p>
-                    <p><b>RM 49.90</b></p>
-                    <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
-                            onclick="document.getElementById('download').style.display='block'">Add to cart <i
-                                class="fa fa-shopping-cart"></i></button></p>
+                <h4 id="list-item-3" class="setsubtitlepadding">Romance</h4>
+                <!-- Third Photo Grid-->
+                <div id="group" class="w3-row-padding w3-center">
+                    <div id="sContainers" class="w3-quarter displayborder">
+                        <img src="/image/book9.jpg" class="poster">
+                        <h4 class="s1">Komi Can’t Communicate, Vol. 1</h4>
+                        <p class="s2">Tomohito Oda</p>
+                        <p><b>RM 47.70</b></p>
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
+                                onclick="document.getElementById('download').style.display='block'">Add to cart <i
+                                    class="fa fa-shopping-cart"></i></button></p>
+                    </div>
+                    <div id="sContainers" class="w3-quarter displayborder">
+                        <img src="/image/book10.jpg" class="poster">
+                        <h4 class="s1">Re:ZERO -Starting Life in Another World, Vol. 1</h4>
+                        <p class="s2">Tappei Nagatsuki</p>
+                        <p><b>RM 65.90</b></p>
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
+                                onclick="document.getElementById('download').style.display='block'">Add to cart <i
+                                    class="fa fa-shopping-cart"></i></button></p>
+                    </div>
+                    <div id="sContainers" class="w3-quarter displayborder">
+                        <img src="/image/book11.jpg" class="poster">
+                        <h4 class="s1">Rascal Does Not Dream of Bunny Girl-senpai, Vol. 1</h4>
+                        <p class="s2">Hajime Kamoshida</p>
+                        <p><b>RM 79.00</b></p>
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
+                                onclick="document.getElementById('download').style.display='block'">Add to cart <i
+                                    class="fa fa-shopping-cart"></i></button></p>
+                    </div>
+                    <div id="sContainers" class="w3-quarter displayborder">
+                        <img src="/image/book12.jpg" class="poster">
+                        <h4 class="s1">Suzume</h4>
+                        <p class="s2">Makoto Shinkai</p>
+                        <p><b>RM 20.00</b></p>
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
+                                onclick="document.getElementById('download').style.display='block'">Add to cart <i
+                                    class="fa fa-shopping-cart"></i></button></p>
+                    </div>
                 </div>
-                <div id="sContainers" class="w3-quarter displayborder">
-                    <img src="/image/book23.jpg" class="poster">
-                    <h4 class="s1">Jujutsu Kaisen, Vol. 1</h4>
-                    <p class="s2">Akutami, Gege</p>
-                    <p><b>RM 47.60</b></p>
-                    <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
-                            onclick="document.getElementById('download').style.display='block'">Add to cart <i
-                                class="fa fa-shopping-cart"></i></button></p>
-                </div>
-                <div id="sContainers" class="w3-quarter displayborder">
-                    <img src="/image/book24.jpg" class="poster">
-                    <h4 class="s1">Chainsaw Man, Vol. 4</h4>
-                    <p class="s2">Tatsuki Fujimoto</p>
-                    <p><b>RM 47.60</b></p>
-                    <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
-                            onclick="document.getElementById('download').style.display='block'">Add to cart <i
-                                class="fa fa-shopping-cart"></i></button></p>
-                </div>
-            </div>
-            <!-- Second Photo Grid-->
-            <div id="group" class="w3-row-padding w3-center">
-                <div id="sContainers" class="w3-quarter displayborder">
-                    <img src="/image/book7.jpg" class="poster">
-                    <h4 class="s1">Attack on Titan, Vol. 1</h4>
-                    <p class="s2">Hajime Isayama</p>
-                    <p><b>RM 45.00</b></p>
-                    <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
-                            onclick="document.getElementById('download').style.display='block'">Add to cart <i
-                                class="fa fa-shopping-cart"></i></button></p>
-                </div>
-                <div id="sContainers" class="w3-quarter displayborder">
-                    <img src="/image/book20.jpg" class="poster">
-                    <h4 class="s1">No Game No Life, Vol. 1</h4>
-                    <p class="s2">Yuu Kamiya</p>
-                    <p><b>RM 45.90</b></p>
-                    <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
-                            onclick="document.getElementById('download').style.display='block'">Add to cart <i
-                                class="fa fa-shopping-cart"></i></button></p>
-                </div>
-                <div id="sContainers" class="w3-quarter displayborder">
-                    <img src="/image/book25.jpg" class="poster">
-                    <h4 class="s1">Demon Slayer: Kimetsu no Yaiba, Vol. 8</h4>
-                    <p class="s2">Koyoharu Gotouge</p>
-                    <p><b>RM 42.50</b></p>
-                    <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
-                            onclick="document.getElementById('download').style.display='block'">Add to cart <i
-                                class="fa fa-shopping-cart"></i></button></p>
-                </div>
-                <div id="sContainers" class="w3-quarter displayborder">
-                    <img src="/image/book26.jpg" class="poster">
-                    <h4 class="s1">The Promised Neverland, Vol. 4</h4>
-                    <p class="s2">Shirai, Kaiu/ Demizu, Posuka</p>
-                    <p><b>RM 47.50</b></p>
-                    <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
-                            onclick="document.getElementById('download').style.display='block'">Add to cart <i
-                                class="fa fa-shopping-cart"></i></button></p>
-                </div>
-                <div id="sContainers" class="w3-quarter displayborder">
-                    <img src="/image/book27.jpg" class="poster">
-                    <h4 class="s1">Komi Can't Communicate, Vol. 1</h4>
-                    <p class="s2">Oda, Tomohito</p>
-                    <p><b>RM 47.60</b></p>
-                    <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
-                            onclick="document.getElementById('download').style.display='block'">Add to cart <i
-                                class="fa fa-shopping-cart"></i></button></p>
-                </div>
-            </div>
-            <!-- Third Photo Grid-->
-            <div id="group" class="w3-row-padding w3-center">
-                <div id="sContainers" class="w3-quarter displayborder">
-                    <img src="/image/book19.jpg" class="poster">
-                    <h4 class="s1">Overlord, Vol. 1</h4>
-                    <p class="s2">Kugane Maruyama</p>
-                    <p><b>RM 77.70</b></p>
-                    <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
-                            onclick="document.getElementById('download').style.display='block'">Add to cart <i
-                                class="fa fa-shopping-cart"></i></button></p>
-                </div>
-                <div id="sContainers" class="w3-quarter displayborder">
-                    <img src="/image/book18.jpg" class="poster">
-                    <h4 class="s1">Classroom of the Elite, Vol. 1</h4>
-                    <p class="s2">Syougo Kinugasa</p>
-                    <p><b>RM 49.90</b></p>
-                    <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
-                            onclick="document.getElementById('download').style.display='block'">Add to cart <i
-                                class="fa fa-shopping-cart"></i></button></p>
-                </div>
-                <div id="sContainers" class="w3-quarter displayborder">
-                    <img src="/image/book16.jpg" class="poster">
-                    <h4 class="s1">Spy Classroom</h4>
-                    <p class="s2">Takemachi, Tomari</p>
-                    <p><b>RM 66.00</b></p>
-                    <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
-                            onclick="document.getElementById('download').style.display='block'">Add to cart <i
-                                class="fa fa-shopping-cart"></i></button></p>
-                </div>
-                <div id="sContainers" class="w3-quarter displayborder">
-                    <img src="/image/book28.jpg" class="poster">
-                    <h4 class="s1">Attack on Titan, Vol. 30</h4>
-                    <p class="s2">Hajime Isayama</p>
-                    <p><b>RM 45.00</b></p>
-                    <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
-                            onclick="document.getElementById('download').style.display='block'">Add to cart <i
-                                class="fa fa-shopping-cart"></i></button></p>
-                </div>
-                <div id="sContainers" class="w3-quarter displayborder">
-                    <img src="/image/book5.jpg" class="poster">
-                    <h4 class="s1">Chainsaw Man</h4>
-                    <p class="s2">Tatsuki Fujimoto</p>
-                    <p><b>RM 49.90</b></p>
-                    <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
-                            onclick="document.getElementById('download').style.display='block'">Add to cart <i
-                                class="fa fa-shopping-cart"></i></button></p>
+                <h4 id="list-item-4" class="setsubtitlepadding">Slice-of-Life</h4>
+                <!-- Forth Photo Grid-->
+                <div id="group" class="w3-row-padding w3-center">
+                    <div id="sContainers" class="w3-quarter displayborder">
+                        <img src="/image/book13.jpg" class="poster">
+                        <h4 class="s1">Spy X Family, Vol. 1</h4>
+                        <p class="s2">Tatsuya Endo</p>
+                        <p><b>RM 49.90</b></p>
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
+                                onclick="document.getElementById('download').style.display='block'">Add to cart
+                                <i class="fa fa-shopping-cart"></i></button></p>
+                    </div>
+                    <div id="sContainers" class="w3-quarter displayborder">
+                        <img src="/image/book14.jpg" class="poster">
+                        <h4 class="s1">Assassination Classroom</h4>
+                        <p class="s2">Yusei Matsui</p>
+                        <p><b>RM 55.00</b></p>
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
+                                onclick="document.getElementById('download').style.display='block'">Add to cart
+                                <i class="fa fa-shopping-cart"></i></button></p>
+                    </div>
+                    <div id="sContainers" class="w3-quarter displayborder">
+                        <img src="/image/book15.jpg" class="poster">
+                        <h4 class="s1">Classroom of the Elite Vol. 1</h4>
+                        <p class="s2">Syougo Kinugasa</p>
+                        <p><b>RM 47.90</b></p>
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
+                                onclick="document.getElementById('download').style.display='block'">Add to cart
+                                <i class="fa fa-shopping-cart"></i></button></p>
+                    </div>
+                    <div id="sContainers" class="w3-quarter displayborder">
+                        <img src="/image/book16.jpg" class="poster">
+                        <h4 class="s1">Spy Classroom</h4>
+                        <p class="s2">Takemachi, Tomari</p>
+                        <p><b>RM 66.00</b></p>
+                        <p><button class="w3-button w3-block w3-deep-orange w3-hover-red w3-round"
+                                onclick="document.getElementById('download').style.display='block'">Add to cart
+                                <i class="fa fa-shopping-cart"></i></button></p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-
     <!------------------------------------------------------------------------------------------------------------------------------------------->
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 
 
-<footer>
+<footer style="margin-top: 10px;">
     <div class="footer-container" class="container-fluid">
         <div class="socialMedia">
             <ul class="adjustment" style="list-style-type: none;">
@@ -537,6 +561,6 @@
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 </script>
-<script src="home.js"></script>
+<script src="/Home/home.js"></script>
 
 </html>
