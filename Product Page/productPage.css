@@ -1,0 +1,15 @@
+/*Mobile and Tablet*/
+@media (max-width: 869px) {
+    
+}
+
+/*Quite small mobile*/
+@media (max-height: 851px) {
+    .adjustment {
+        margin-left: -30px;
+    }
+
+    .adjustment2 {
+        margin-left: -16px;
+    }
+}
