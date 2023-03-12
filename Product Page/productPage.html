@@ -32,11 +32,6 @@
         }
 
         #row2 {
-            /* width: 100%;
-            height: 100%;
-            display: flex ;
-            flex-flow: row wrap;
-            flex: 2 2 1px; */
             border-style: double;
             border-color: #a3a3c2;
             /* justify-content: space-around; */
@@ -51,13 +46,6 @@
         #more {
             display: none;
         }
-
-        /* #product-pic,#product-details {
-            outline: 1px solid #a3a3c2;
-            
-
-            
-        } */
     </style>
 </head>
 
@@ -241,9 +229,9 @@
 
 
         <div class="search-container col-5" id="search">
-            <div class="container-fluid">
+            <div class="container-fluid adjust">
                 <form class="d-flex input-group" role="search">
-                    <input type="text" class="form-control border border-1" placeholder="Book title/Author name"
+                    <input type="text" class="form-control border border-1" id="searchb" placeholder="Book title/Author name"
                         aria-label="Book title/Author name" aria-describedby="button-addon2">
                     <button class="btn btn-outline-danger" type="button" id="button-addon2"><i
                             style="font-size: 18px; display:flex; justify-content: center; align-items: center; margin-top: -2px;"
@@ -266,10 +254,6 @@
                 </ul>
             </div>
 
-            <div class="wishlist-container">
-                <i data-bs-toggle="tooltip" data-bs-title="Wishlist" class="fa fa-heart" aria-hidden="true"
-                    style="cursor: pointer; font-size:20px; color:white; margin-left :8px; background-color:rgb(215, 7, 7); border-radius: 5.5px; padding: 10px;"></i>
-            </div>
             <div calss="cart-container">
                 <i data-bs-toggle="tooltip" data-bs-title="Cart" class="fa fa-shopping-cart" aria-hidden="true"
                     style="cursor: pointer; margin-left: 8px; background-color: rgb(215, 7, 7); color:white; padding: 10px; padding-right: 9px; border-radius: 5.5px; font-size: 20px"></i>
@@ -357,16 +341,16 @@
                     </ol>
                 </nav>
             </div>
-            <div id="row2" class="row">
+            <div id="row2" class="row outer-cont">
 
                 <!-- Product picture place here -->
                 <div id="product-pic" class="col-4">
-                    <img src="/image/book1.jpg" style="width:100%">
+                    <img src="/image/book12.jpg" style="width:100%">
                 </div>
 
                 <!-- Product details place here -->
                 <div id="product-details" class="col-8">
-                    <div>
+                    <div style="text-align: center;">
                         <h4 class="s1">Suzume</h4>
                         <p class="s2">Makoto Shinkai</p>
                         <p><b>RM 20.00</b></p>
@@ -384,7 +368,7 @@
                                 <p>Language:</p>
                             </div>
                             <div class="col-7">
-                                <p><b>Jappanese</b></p>
+                                <p><b>Japanese</b></p>
                             </div>
                         </div>
 
@@ -455,7 +439,7 @@
                                             <span class="glyphicon glyphicon-minus"></span>
                                         </button>
                                     </span>
-                                    <input type="text" id="quantity" name="quantity" class="form-control input-number"
+                                    <input style="text-align: center;" type="text" id="quantity" name="quantity" class="form-control input-number"
                                         value="1" min="1" max="100">
                                     <span class="input-group-btn">
                                         <button type="button" class="quantity-right-plus btn btn-success btn-number"
@@ -471,7 +455,7 @@
                         <!-- Add to card & Buy now button here -->
                         <div id="details-row" class="row">
                             <div class="col-6" style="display: flex;">
-                                <button type="submit" class="btn btn-danger" style="background-color: #cc3300; width: 100%;">Add to card</button>
+                                <button type="submit" class="btn btn-danger" style="background-color: #cc3300; width: 100%;">Add to cart</button>
                             </div>
                             <div class="col-6">
                                 <button type="submit" class="btn btn-success" style="background-color: #3d3d5c; border-color: #3d3d5c; width: 100%;">Buy it now</button>
