@@ -1,6 +1,6 @@
 
 <%@page import="model.Book"%>
-<% Book book = (Book)session.getAttribute("Book"); %>
+<% Book book = (Book) session.getAttribute("Book");%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -351,15 +351,15 @@
         </div>
     </div>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
     <!-- Main Product details + Picuture-->
     <main>
         <div id="product-details" class="container" style="padding: 50px 25px;">
@@ -368,7 +368,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="homepage.jsp"
                                                        style="text-decoration: none; color: #00bfff;">Home</a></li>
-                        <li class="breadcrumb-item"><a href="manga&lightnovel.html" style="text-decoration: none;color: #00bfff;"> <%= book.getCategory() %> </a></li>
+                        <li class="breadcrumb-item"><a href="manga&lightnovel.html" style="text-decoration: none;color: #00bfff;"> <%= book.getCategory()%> </a></li>
                         <li class="breadcrumb-item active" aria-current="page"><%= book.getName()%> </li>
                     </ol>
                 </nav>
@@ -377,15 +377,15 @@
 
                 <!-- Product picture place here -->
                 <div id="product-pic" class="col-4">
-                    <img src="<%= book.getImage() %>" style="width:100%">
+                    <img src="<%= book.getImage()%>" style="width:100%">
                 </div>
 
                 <!-- Product details place here -->
                 <div id="product-details" class="col-8">
                     <div style="text-align: center;">
-                        <h4 class="s1"><%= book.getName() %></h4>
-                        <p class="s2"><%= book.getAuthor() %></p>
-                        <p><b>RM <%= book.getPrice() %></b></p>
+                        <h4 class="s1"><%= book.getName()%></h4>
+                        <p class="s2"><%= book.getAuthor()%></p>
+                        <p><b>RM <%= book.getPrice()%></b></p>
                     </div>
 
                     <!-- Horizontal Line -->
@@ -400,7 +400,7 @@
                                 <p>Language:</p>
                             </div>
                             <div class="col-7">
-                                <p><b><%= book.getLanguage() %></b></p>
+                                <p><b><%= book.getLanguage()%></b></p>
                             </div>
                         </div>
 
@@ -410,7 +410,7 @@
                                 <p>Availability:</p>
                             </div>
                             <div class="col-7">
-                                <p><b>Only <%= book.getQuantity() %> Units left</b></p>
+                                <p><b>Only <%= book.getQuantity()%> Units left</b></p>
                             </div>
                         </div>
 
@@ -433,7 +433,7 @@
                             <div class="col-7">
                                 <p>
                                     <b>
-                                        <%= book.getDescription() %><span id="dots">...</span><span id="more">
+                                        <%= book.getDescription()%><span id="dots">...</span><span id="more">
                                             </br>
                                             </br>
                                             </br>
@@ -450,42 +450,49 @@
 
                         <br>
 
-                        <!-- Input product quantity here -->
-                        <div id="details-row" class="row">
-                            <div class="col-5">
-                                <p>Quantity:</p>
-                            </div>
-                            <div class="col-7">
-                                <div class="input-group">
-                                    <span class="input-group-btn">
-                                        <button type="button" class="quantity-left-minus btn btn-danger btn-number"
-                                                data-type="minus" data-field="">
-                                            <span>-</span>
-                                        </button>
-                                    </span>
-                                    <input style="text-align: center;" type="text" id="quantity" name="quantity" class="form-control input-number"
-                                           value="1" min="1" max="100">
-                                    <span class="input-group-btn">
-                                        <button style="height: 100%;" type="button" class="quantity-right-plus btn btn-success btn-number"
-                                                data-type="plus" data-field="">
-                                            <span>+</span>
-                                        </button>
-                                    </span>
+
+                        <form action="AddToCart" method="GET">
+                            <!-- Input product quantity here -->
+                            <div id="details-row" class="row">
+                                <div class="col-5">
+                                    <p>Quantity:</p>
+                                </div>
+                                <div class="col-7">
+                                    <div class="input-group">
+                                        <span class="input-group-btn">
+                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                                    data-type="minus" data-field="">
+                                                <span>-</span>
+                                            </button>
+                                        </span>
+                                        <input style="text-align: center;" type="text" id="quantity" name="quantity" class="form-control input-number"
+                                               value="1" min="1" max="100">
+                                        <span class="input-group-btn">
+                                            <button style="height: 100%;" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                                    data-type="plus" data-field="">
+                                                <span>+</span>
+                                            </button>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <Br>
-                        <!-- Add to card & Buy now button here -->
-                        <div id="details-row" class="row">
-                            <div class="col-6" style="display: flex;">
-                                <button type="submit" class="btn btn-danger" style="background-color: #cc3300; width: 100%;">Add to cart</button>
+
+                            <br>
+                            <!-- Add to card & Buy now button here -->
+                            <div id="details-row" class="row">
+                                <div class="col-6" style="display: flex;">
+                                    <button type="submit" class="btn btn-danger" style="background-color: #cc3300; width: 100%;">Add to cart</button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-success" style="background-color: #3d3d5c; border-color: #3d3d5c; width: 100%;">Buy it now</button>
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <button type="submit" class="btn btn-success" style="background-color: #3d3d5c; border-color: #3d3d5c; width: 100%;">Buy it now</button>
-                            </div>
-                        </div>
                     </div>
+
+                    <input type="hidden" name="bookid" id="bookid" value="<%= book.getBookid() %>">
+
+                    </form>
 
 
                 </div>
