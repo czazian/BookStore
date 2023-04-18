@@ -368,8 +368,25 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="homepage.jsp"
                                                        style="text-decoration: none; color: #00bfff;">Home</a></li>
-                        <li class="breadcrumb-item"><a href="manga&lightnovel.html" style="text-decoration: none;color: #00bfff;"> <%= book.getCategory()%> </a></li>
-                        <li class="breadcrumb-item active" aria-current="page"><%= book.getName()%> </li>
+                                                       <li class="breadcrumb-item"><a href="
+                                                                                      
+                                                                                      <%
+                                                                                      String category = book.getCategory();
+                                                                                          if(category.equals("Fiction")){
+                                                                                            out.print("fiction.jsp");
+                                                                                          } else if(category.equals("Non-Fiction")){
+                                                                                            out.print("nonfiction.jsp");
+                                                                                          } else if(category.equals("Manga & Light Novel")){
+                                                                                            out.print("manga&lightnovel.jsp");
+                                                                                          } else if(category.equals("Children's")){
+                                                                                            out.print("children.jsp");
+                                                                                          } else if(category.equals("Others")){
+                                                                                            out.print("other.jsp");
+                                                                                          } 
+                                                                                      %>
+                                                                                      
+                                                                                      " style="text-decoration: none;color: #00bfff;"> <%= book.getCategory() %> </a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><%= book.getName() %> </li>
                     </ol>
                 </nav>
             </div>
